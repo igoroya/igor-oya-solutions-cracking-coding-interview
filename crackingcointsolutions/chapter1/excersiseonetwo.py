@@ -4,8 +4,9 @@ Check permutation: Given two strings, write a method to decide if one is a permu
 
 Things to learn:
 - a python set orders set content
-- in a set, one uses == to compare same content  
+- in a set, one uses == to compare same content
 @author: igoroya
+
 '''
 
 
@@ -14,7 +15,7 @@ def check_string_permuntation(str1, str2):
         return False
     strset1 = {i for i in str1}
     strset2 = {i for i in str2}
-    
+
     if strset1 == strset2:
         return True
     else:
