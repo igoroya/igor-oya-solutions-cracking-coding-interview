@@ -31,12 +31,27 @@ def rotate_matrix(matrix):
             matrix_new[i][j] = matrix[matrix_n - j -1][i]
     return matrix_new
 
+def print_matrix(matrix):
+    for i in matrix:
+        print(i)
+    print(' ')
+
 if __name__ == '__main__':
     matrix = [
         [1, 2 ,3 ],
         [4, 5 ,6 ],
         [7, 8 ,9 ]
     ]
-    print(matrix)
-    print(rotate_matrix(matrix))
+    print_matrix(matrix)
+    print_matrix(rotate_matrix(matrix))
+
+    matrix = [
+        [1, 2, 3, 4],
+        [5, 6, 7, 8],
+        [9, 10, 11, 12],
+        [13, 14, 15, 16]
+    ]
+    print_matrix(matrix)
+    print_matrix(rotate_matrix(matrix))
+
 
