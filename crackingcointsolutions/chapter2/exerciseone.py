@@ -34,11 +34,31 @@ def remove_dups(my_list):
 
 def remove_dups_2(my_list):
     '''
-    Removes dups in list, without using data structures
+    Removes dups in list, without using data structures.
+    This works at O(N^2)
     '''
+    if len(my_list) == 0:
+        return
+
+    node = my_list.head_node
+
+    while node.next_node is not None:
+        other_node = node
+        while other_node.next_node is not None:
+            if node.cargo == other_node.next_node.cargo:
+                other_node.next_node = other_node.next_node.next_node
+                my_list._length -= 1
+            else:
+                other_node = other_node.next_node
+        node = node.next_node
 
 if __name__ == '__main__':
     my_list = utils.make_sample_list()
     print(my_list)
     remove_dups(my_list)
+    print(my_list)
+
+    my_list = utils.make_sample_list()
+    print(my_list)
+    remove_dups_2(my_list)
     print(my_list)

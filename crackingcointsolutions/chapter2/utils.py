@@ -153,3 +153,24 @@ def make_sample_list():
 
     return my_list
 
+
+
+def make_sample_list_nums():
+    '''
+    Helper function to create a sampel list for the exercises
+    '''
+
+    my_list = SinglyLinkedList()
+
+     #do twice to have dups
+    for n in range(6):
+        my_list.append(2*n)
+
+    for n in range(6):
+        my_list.append(n)
+
+
+
+
+    return my_list
+
