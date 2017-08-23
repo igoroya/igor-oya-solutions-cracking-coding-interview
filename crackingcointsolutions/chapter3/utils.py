@@ -59,7 +59,7 @@ class Stack(object):
         '''
         self._deque = collections.deque
 
-    def add_item(self, item):
+    def push(self, item):
         '''
         add an item at the end of the queue
         '''

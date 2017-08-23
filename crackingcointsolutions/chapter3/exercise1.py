@@ -35,7 +35,7 @@ class ThreeStacskOnArray():
     def __get_index(self, stack_id):
         return stack_id - 1 + (self._stack_size[stack_id - 1]- 1 )*3
 
-    def add_item(self, item, stack_id):
+    def push(self, item, stack_id):
         '''
         add an item at the end of the queue
         Stack IDs are 1, 2 & 3
@@ -76,11 +76,11 @@ class ThreeStacskOnArray():
 if __name__ == '__main__':
     my_stacks = ThreeStacskOnArray(50)
     print("Is empty: {}".format(my_stacks.isEmpty(2)))
-    my_stacks.add_item(34.0, 2)
+    my_stacks.push(34.0, 2)
     print("Is empty: {}".format(my_stacks.isEmpty(2)))
     print("Peek: {}".format( my_stacks.peek(2)))
 
-    my_stacks.add_item(11.0, 2)
+    my_stacks.push(11.0, 2)
     print("Peek: {}".format( my_stacks.peek(2)))
     my_stacks.remove(2)
     print("Peek: {}".format( my_stacks.peek(2)))
