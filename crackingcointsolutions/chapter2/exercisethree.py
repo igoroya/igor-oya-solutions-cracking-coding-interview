@@ -8,7 +8,7 @@ given only access to the node.
 
 @author: igoroya
 '''
-from chapter2 import utils # TODO: try relative imports
+from chapter2 import utils
 
 
 def delete_node(node):

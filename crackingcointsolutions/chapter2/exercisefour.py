@@ -13,7 +13,7 @@ Output: 3 -> 1 -> 2 -> 10 -> 5 -> 5 -> 8
 
 @author: igoroya
 '''
-from chapter2 import utils # TODO: try relative imports
+from chapter2 import utils
 
 def partition(linked_list, partition):
     # Idea: run over list and put to head any element that is below value
@@ -42,7 +42,7 @@ def put_next_node_to_head(linked_list, prev_node):
 
 if __name__ == '__main__':
     my_list = utils.make_sample_list_nums()
-    print( my_list)
+    print(my_list)
 
     pivot = 4
     partition(my_list, pivot)

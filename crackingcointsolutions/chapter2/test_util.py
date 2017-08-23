@@ -3,7 +3,7 @@ Created on 14 Aug 2017
 
 @author: igoroya
 '''
-from chapter2 import utils # TODO: try relative imports
+from chapter2 import utils
 
 if __name__ == '__main__':
     cargo = 'Hello'

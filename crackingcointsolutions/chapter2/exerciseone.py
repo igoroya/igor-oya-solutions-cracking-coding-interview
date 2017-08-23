@@ -9,7 +9,7 @@ How would you solve this problem if a temporary buffer is not allowed
 
 @author: igoroya
 '''
-from chapter2 import utils # TODO: try relative imports
+from chapter2 import utils
 
 
 def remove_dups(my_list):

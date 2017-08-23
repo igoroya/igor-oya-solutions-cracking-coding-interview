@@ -17,7 +17,7 @@ Output: 9 -> 1 -> 2. That is, 912
 
 @author: igoroya
 '''
-from chapter2 import utils # TODO: try relative imports
+from chapter2 import utils
 
 def sum_lists(list1, list2):
     # for the sake of the exercise, I'll assume that I do not know the length of the

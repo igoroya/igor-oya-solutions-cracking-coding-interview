@@ -10,7 +10,7 @@ Assumptions: each node of the list contains a single letter.
 
 @author: igoroya
 '''
-from chapter2 import utils # TODO: try relative imports
+from chapter2 import utils
 
 
 def invert_list(my_list):

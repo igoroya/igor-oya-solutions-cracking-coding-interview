@@ -9,7 +9,7 @@ For the sake of the exercise, I will assume that we do not know the size of the 
 
 @author: igoroya
 '''
-from chapter2 import utils # TODO: try relative imports
+from chapter2 import utils
 
 def find_kth_to_last(my_list, position):
 
