@@ -9,6 +9,7 @@ It is mainly based on the standard deques. It is not fully efficient for the
 '''
 
 import collections
+import random
 
 class Queue(object):
     '''
@@ -19,7 +20,7 @@ class Queue(object):
         '''
         Constructor
         '''
-        self._deque = collections.deque
+        self._deque = collections.deque()
 
     def add_item(self, item):
         '''
@@ -41,11 +42,11 @@ class Queue(object):
         self._deque.append(value)
         return value
 
-    def isEmpty(self):
+    def is_empty(self):
         '''
         Returns True if the queu is empty
         '''
-        return bool(self._deque)
+        return not bool(self._deque)
 
 
 class Stack(object):
@@ -57,7 +58,13 @@ class Stack(object):
         '''
         Constructor
         '''
-        self._deque = collections.deque
+        self._deque = collections.deque()
+
+    def __repr__(self):
+        return self._deque.__repr__()
+
+    def __len__(self):
+        return self._deque.__len__()
 
     def push(self, item):
         '''
@@ -79,9 +86,19 @@ class Stack(object):
         self._deque.appendleft(value)
         return value
 
-    def isEmpty(self):
+    def is_empty(self):
         '''
         Returns True if the queu is empty
         '''
-        return bool(self._deque)
+        return not bool(self._deque)
+
+
+def add_some_values(stack, n_values):
+    '''
+    Adds some float values to the stack
+    '''
+    values = [random.randint(0,100) for _ in range(n_values)]
+
+    for i in values:
+        stack.push(i)
 
