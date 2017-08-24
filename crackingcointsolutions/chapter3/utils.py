@@ -68,19 +68,19 @@ class Stack(object):
 
     def push(self, item):
         '''
-        add an item at the end of the queue
+        add an item at the top of the stack
         '''
         self._deque.appendleft(item)
 
     def remove(self):
         '''
-        removes 1st item of the queue
+        removes item of the top of the stack
         '''
         self._deque.popleft()
 
     def peek(self):
         '''
-       `returns to the top of the queue (without removing)
+       `returns to the top of the stack (without removing)
         '''
         value = self._deque.popleft()
         self._deque.appendleft(value)
@@ -88,7 +88,7 @@ class Stack(object):
 
     def is_empty(self):
         '''
-        Returns True if the queu is empty
+        Returns True if the stack is empty
         '''
         return not bool(self._deque)
 
