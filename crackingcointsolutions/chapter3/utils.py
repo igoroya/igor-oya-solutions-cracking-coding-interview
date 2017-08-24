@@ -102,3 +102,11 @@ def add_some_values(stack, n_values):
     for i in values:
         stack.push(i)
 
+def add_some_values_queue(queue, n_values):
+    '''
+    Adds some float values to the stack
+    '''
+    values = [random.randint(0,100) for _ in range(n_values)]
+
+    for i in values:
+        queue.add_item(i)
