@@ -10,6 +10,7 @@ It is mainly based on the standard deques. It is not fully efficient for the
 
 import collections
 import random
+import copy
 
 class Queue(object):
     '''
@@ -61,10 +62,19 @@ class Stack(object):
         self._deque = collections.deque()
 
     def __repr__(self):
+        '''
+        Provide the content of the stack. The repr have the 'deque' incorporated
+        in the string, a production solution should take it out
+        '''
         return self._deque.__repr__()
 
     def __len__(self):
         return self._deque.__len__()
+
+    def __copy__(self):
+        newone = type(self)()
+        newone._deque = copy.copy(self._deque)
+        return newone
 
     def push(self, item):
         '''
