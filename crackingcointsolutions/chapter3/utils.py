@@ -23,6 +23,13 @@ class Queue(object):
         '''
         self._deque = collections.deque()
 
+    def __repr__(self):
+        '''
+        Provide the content of the queue. The repr have the 'deque' incorporated
+        in the string, a production solution should take it out
+        '''
+        return self._deque.__repr__()
+
     def add_item(self, item):
         '''
         add an item at the end of the queue
