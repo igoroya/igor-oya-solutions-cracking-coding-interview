@@ -8,7 +8,6 @@ I used the networkx for the graph usage
 To learn:
 -networkx
 - for a digraph, I just need to know: loop over it, get "successors" (or "predecessors)
-- TODO: Make my own simple digraph?
 
 @author: igoroya
 '''
