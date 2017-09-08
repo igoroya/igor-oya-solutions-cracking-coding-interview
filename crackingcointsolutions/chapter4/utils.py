@@ -21,7 +21,7 @@ class TreeNode(object):
 class BinaryTreeNode(object):
     def __init__(self, name=None):
         '''
-        A very simple node of a tree, all what is needed to work with trees in the exercises
+        A very simple node of a binary tree, all what is needed to work with trees in the exercises
         '''
         self.name = name
         self.left = None
@@ -39,3 +39,4 @@ class BinaryTreeNode(object):
 
 
         return "node: {} l {}, r {}".format(self.name.__repr__(), left, right)
+
